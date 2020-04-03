@@ -9,9 +9,6 @@ class Person(models.Model):
     age = models.IntegerField()
     birth = models.DateField()
 
-    def __str__(self):
-        return "%i : %s, %i years old, birth %s" % (self.id, self.name, self.age, self.birth)
-
 class Car(models.Model):
 
     id =  models.AutoField(primary_key = True)
